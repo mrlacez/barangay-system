@@ -1,0 +1,137 @@
+/* Keep these record searches visually and behaviorally consistent with Residents. */
+#official-records .resident-list-header {
+    align-items: flex-start;
+    display: block;
+    margin-bottom: 22px;
+}
+
+#official-records .resident-list-header h2 {
+    color: #172554;
+    font-size: 22px;
+    margin: 0 0 5px;
+}
+
+#official-records .resident-list-header p {
+    color: #64748b;
+    margin: 0;
+}
+
+#official-records .resident-list-header form.search-form,
+#certificate-records form.search-form,
+#blotter-records form.search-form,
+#announcement-records form.search-form {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 18px;
+}
+
+#official-records .resident-list-header form.search-form input[type="text"],
+#certificate-records form.search-form input[type="text"],
+#blotter-records form.search-form input[type="text"],
+#announcement-records form.search-form input[type="text"] {
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    box-sizing: border-box;
+    color: #182337;
+    flex: 0 1 575px;
+    font: inherit;
+    min-height: 46px;
+    min-width: min(100%, 260px);
+    padding: 11px 14px;
+    width: 100%;
+}
+
+#official-records .resident-list-header form.search-form input[type="text"]:focus,
+#certificate-records form.search-form input[type="text"]:focus,
+#blotter-records form.search-form input[type="text"]:focus,
+#announcement-records form.search-form input[type="text"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .14);
+    outline: 0;
+}
+
+#official-records .resident-list-header form.search-form button,
+#official-records .resident-list-header form.search-form a,
+#certificate-records form.search-form button,
+#certificate-records form.search-form a,
+#blotter-records form.search-form button,
+#blotter-records form.search-form a,
+#announcement-records form.search-form button,
+#announcement-records form.search-form a {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    box-sizing: border-box;
+    display: inline-flex;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 18px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#official-records .resident-list-header form.search-form button,
+#certificate-records form.search-form button,
+#blotter-records form.search-form button,
+#announcement-records form.search-form button {
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+}
+
+#official-records .resident-list-header form.search-form a,
+#certificate-records form.search-form a,
+#blotter-records form.search-form a,
+#announcement-records form.search-form a {
+    background: #f1f5f9;
+    border-color: #e2e8f0;
+    color: #334155;
+}
+
+#official-records .resident-list-header form.search-form button:hover,
+#official-records .resident-list-header form.search-form a:hover,
+#certificate-records form.search-form button:hover,
+#certificate-records form.search-form a:hover,
+#blotter-records form.search-form button:hover,
+#blotter-records form.search-form a:hover,
+#announcement-records form.search-form button:hover,
+#announcement-records form.search-form a:hover {
+    filter: brightness(.97);
+}
+
+@media (max-width: 900px) {
+    #official-records .resident-list-header form.search-form,
+    #certificate-records form.search-form,
+    #blotter-records form.search-form,
+    #announcement-records form.search-form {
+        width: 100%;
+    }
+
+    #official-records .resident-list-header form.search-form input[type="text"],
+    #certificate-records form.search-form input[type="text"],
+    #blotter-records form.search-form input[type="text"],
+    #announcement-records form.search-form input[type="text"] {
+        flex: 1 1 100%;
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    #official-records .resident-list-header form.search-form button,
+    #official-records .resident-list-header form.search-form a,
+    #certificate-records form.search-form button,
+    #certificate-records form.search-form a,
+    #blotter-records form.search-form button,
+    #blotter-records form.search-form a,
+    #announcement-records form.search-form button,
+    #announcement-records form.search-form a {
+        flex: 1 1 100%;
+    }
+}
